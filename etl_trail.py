@@ -31,13 +31,13 @@ def process_song_data(spark, input_data, output_data):
 	# creating schema fo our song_data
 	
 	songs_model = St([
-        Sfld("num_songs", Int()),
+		Sfld("num_songs", Int()),
 		Sfld("artist_id", Str()),
 		Sfld("artist_latitude", Dbl()),
 		Sfld("artist_longitude", Dbl()),
 		Sfld("artist_location", Str()),
 		Sfld("artist_name", Str()),
-        Sfld("song_id", Str()),
+		Sfld("song_id", Str()),
 		Sfld("title", Str()),
 		Sfld("duration", Dbl()),
 		Sfld("year", Int())
